@@ -9,8 +9,7 @@ from stix_shifter.stix_translation.src.modules.cim import cim_data_mapping
 from stix_shifter.stix_translation.src.modules.car import car_data_mapping
 from stix_shifter.stix_translation.src.utils.unmapped_attribute_stripper import strip_unmapped_attributes
 import sys
-TRANSLATION_MODULES = ['qradar', 'dummy', 'car', 'cim', 'splunk', 'elastic', 'bigfix', 'csa', 'csa:at', 'csa:nf', 'aws_security_hub', 'carbonblack',
-                       'elastic_ecs', 'proxy', 'stix_bundle', 'msatp', 'security_advisor', 'guardium']
+from ..utils.utils import StixShifterUtils
 
 RESULTS = 'results'
 QUERY = 'query'
@@ -37,6 +36,9 @@ class StixTranslation:
             raise StixValidationException("The STIX pattern has the following errors: {}".format(errors))
 
     def translate(self, module, translate_type, data_source, data, options={}, recursion_limit=1000):
+        options['external_modules'] = 'https://github.com/opencybersecurityalliance/stix-shifter/raw/pof_external_module/custom_repository/qradar.zip'
+        StixShifterUtils.load_module(options['external_modules'])
+
         """
         Translated queries to a specified format
         :param module: What module to use
@@ -59,12 +61,13 @@ class StixTranslation:
             dialect = mod_dia[1]
 
         try:
-            if module not in TRANSLATION_MODULES:
+            # if module not in TRANSLATION_MODULES:
+            #     raise UnsupportedDataSourceException("{} is an unsupported data source.".format(module))
+            try:
+                translator_module = importlib.import_module(
+                    "stix_shifter.stix_translation.src.modules." + module + "." + module + "_translator")
+            except Exception as ex:
                 raise UnsupportedDataSourceException("{} is an unsupported data source.".format(module))
-
-            translator_module = importlib.import_module(
-                "stix_shifter.stix_translation.src.modules." + module + "." + module + "_translator")
-
             if dialect is not None:
                 interface = translator_module.Translator(dialect=dialect)
                 options['dialect'] = dialect

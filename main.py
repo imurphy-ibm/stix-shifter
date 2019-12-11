@@ -50,7 +50,7 @@ def __main__():
 
     # positional arguments
     translate_parser.add_argument(
-        'module', choices=stix_translation.TRANSLATION_MODULES, help='The translation module to use')
+        'module', type=str, help='The translation module to use')
     translate_parser.add_argument('translate_type', choices=[
         stix_translation.RESULTS, stix_translation.QUERY, stix_translation.PARSE], help='The translation action to perform')
     translate_parser.add_argument(
@@ -73,7 +73,7 @@ def __main__():
 
     # positional arguments
     transmit_parser.add_argument(
-        'module', choices=stix_transmission.TRANSMISSION_MODULES,
+        'module', type=str,
         help='Choose which connection module to use'
     )
     transmit_parser.add_argument(
@@ -105,11 +105,11 @@ def __main__():
     execute_parser = parent_subparsers.add_parser(EXECUTE, help='Translate and fully execute a query')
     # positional arguments
     execute_parser.add_argument(
-        'transmission_module', choices=stix_transmission.TRANSMISSION_MODULES,
+        'transmission_module', type=str,
         help='Which connection module to use'
     )
     execute_parser.add_argument(
-        'translation_module', choices=stix_translation.TRANSLATION_MODULES,
+        'translation_module', type=str,
         help='Which translation module to use'
     )
     execute_parser.add_argument(

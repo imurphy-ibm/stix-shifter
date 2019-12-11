@@ -1,9 +1,6 @@
 import importlib
 from ..utils.error_response import ErrorResponder
-
-TRANSMISSION_MODULES = ['async_dummy', 'synchronous_dummy', 'qradar', 'splunk', 'bigfix', 'csa', 'aws_security_hub',
-                        'carbonblack', 'elastic_ecs', 'proxy', 'stix_bundle', 'msatp', 'security_advisor', 'guardium']
-
+from ..utils.utils import StixShifterUtils
 
 RESULTS = 'results'
 QUERY = 'query'
@@ -18,10 +15,12 @@ class StixTransmission:
     init_error = None
 
     def __init__(self, module, connection, configuration):
-        if module not in TRANSMISSION_MODULES:
-            raise NotImplementedError
-        if connection.get('options', {}).get('proxy'):
+        options = connection.get('options', {})
+        if options.get('proxy'):
             module = 'proxy'
+
+        options['external_modules'] = 'https://github.com/opencybersecurityalliance/stix-shifter/raw/pof_external_module/custom_repository/qradar.zip'
+        StixShifterUtils.load_module(options['external_modules'])
 
         try:
             self.connector_module = importlib.import_module("stix_shifter.stix_transmission.src.modules." + module +
