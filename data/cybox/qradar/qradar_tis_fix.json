@@ -74,6 +74,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Process Create",
                 "qid": 5001828,
@@ -152,6 +153,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Network connection detected",
                 "qid": 5001840,
@@ -233,6 +235,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Process Create",
                 "qid": 5001828,
@@ -311,6 +314,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Network connection detected",
                 "qid": 5001840,
@@ -392,6 +396,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Process Create",
                 "qid": 5001828,
@@ -470,6 +475,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Network connection detected",
                 "qid": 5001840,
@@ -551,6 +557,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Process Create",
                 "qid": 5001828,
@@ -629,6 +636,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Network connection detected",
                 "qid": 5001840,
@@ -864,6 +872,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Process Create",
                 "qid": 5001828,
@@ -940,6 +949,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 18,
                 "qid_name": "Detected PowerShell Command to Execute In-Memory PowerShell Code",
                 "qid": 67500457,
@@ -1022,6 +1032,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 12,
                 "qid_name": "Process Create",
                 "qid": 5001828,
@@ -1102,6 +1113,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 18,
                 "qid_name": "Detected PowerShell Command to Execute In-Memory PowerShell Code",
                 "qid": 67500457,
@@ -1231,6 +1243,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 18,
                 "qid_name": "Object Downloaded",
                 "qid": 67500346,
@@ -1372,6 +1385,7 @@
                 }
             },
             "x_com_ibm_ariel": {
+                "container_id": "e50aca0629494040b1872f65586ef866cad50e407e773ff3524c5fcf215c5886",
                 "devicetype": 18,
                 "qid_name": "Detected PowerShell Command to Download Content to a File or In-Memory",
                 "qid": 67500346,
